@@ -1,4 +1,4 @@
-pub fn matrix_multiplication(a: &[f32], b: &[f32]) ->  Vec<f32> {
+pub fn matrix_multiplication(a: Vec<f32>, b: Vec<f32>) ->  Vec<f32> {
     let mut z: Vec<f32> = Vec::new();
     for (x, y) in a.iter().zip(b.iter()) {
         z.push(x * y);
