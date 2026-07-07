@@ -15,3 +15,7 @@ Type all of these commands into your terminal
 - Try both:
 - `python main.py`
 - `python3 main.py`
+
+### IMPORTANT:
+
+- For every change in rust code, run `maturin develop`, with steps 1 and 2 complete.
