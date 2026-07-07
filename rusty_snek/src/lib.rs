@@ -14,10 +14,19 @@ fn neuron_calculator(a: Vec<f32>, b: Vec<f32>) ->  f32 {
     return z;
 }
 
+#[pyfunction]
+fn idk(n: u128) {
+    for i in 0..n {
+        let a: f32 = 0.003*0.002; // i^6
+    }
+}
+
 #[pymodule]
 fn rusty_snek(m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(add, m)?)?;
     m.add_function(wrap_pyfunction!(neuron_calculator, m)?)?;
+
+    m.add_function(wrap_pyfunction!(idk, m)?)?;
 
     Ok(())
 }
